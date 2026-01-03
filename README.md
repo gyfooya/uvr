@@ -1,19 +1,36 @@
-# 03 January 2026
-#
+<pre>
+# Fork from Ultimate Vocal Remover GUI 
+# Date : 03 January 2026
+
 # sudo pacman -S tk
-#
+
 # python -m venv venv
 # source venv/bin/activate
 # pip install -r requirements.txt
 # python UVR.py
-#
+
 # Setting -> download models.. (enjoy)
-#
+
 # Compatibility Python 3.13.11
 # playsound==1.2.2
 # v3_v4_repo directory to /models/Demucs_Models/v3_v4_repo
 # fix for matchering (match.save_audiofile) in UVR.py
 
+- ssabug         : https://github.com/Anjok07/ultimatevocalremovergui/issues/1943
+- SparrowOchon   : https://github.com/Anjok07/ultimatevocalremovergui/pull/1830
+
+
+- settyness      : commented on 2025-09-22 06:02 (UTC) Archlinux AUR
+Obviously this no longer builds, but there exists a fork for Python 3.13 here:
+    https://github.com/SparrowOchon/ultimatevocalremovergui
+The instructions are mostly the same as the original repo,
+    but you will have to change playsound==1.3.0 to playsound==1.2.2 in requirements.txt
+and you will need to create the folder models/Demucs_Models/v3_v4_repo.
+
+    These steps are covered in this issue: https://github.com/Anjok07/ultimatevocalremovergui/pull/1830
+Do with this information what you will.
+
+</pre>
 
 # Ultimate Vocal Remover GUI v5.6
 <img src="https://raw.githubusercontent.com/Anjok07/ultimatevocalremovergui/master/gui_data/img/UVR_v5.6.png?raw=true" />
@@ -308,3 +325,4 @@ The **Ultimate Vocal Remover GUI** code is [MIT-licensed](LICENSE).
 
 ## References
 - [1] Takahashi et al., "Multi-scale Multi-band DenseNets for Audio Source Separation", https://arxiv.org/pdf/1706.09588.pdf
+
